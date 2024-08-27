@@ -1,0 +1,23 @@
+{
+  "name": "testapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "grunt clean && grunt copy"
+  },
+  "author": "Terry Mace",
+  "dependencies": {
+    "bootstrap": "4.5.2",
+    "@fortawesome/fontawesome-free": "5.14.0",
+    "jquery": "3.5.1",
+    "jquery-validation": "1.19.2",
+    "jquery-validation-unobtrusive": "3.2.11"
+  },
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-copy": "^1.0.0"
+  }
+}
