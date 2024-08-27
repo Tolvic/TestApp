@@ -1,13 +1,10 @@
 name: Deploy to BetShrewTest App Service
 
 on:
-  push:
-    branches:
-      - master
   workflow_dispatch:
 
 jobs:
-  publish:
+  Publish:
     runs-on: windows-latest
 
     steps:
@@ -36,9 +33,9 @@ jobs:
           name: app-name
           path: ./TestApp/bin/Release/net8.0/publish
 
-  deploy:
+  Deploy:
     runs-on: windows-latest
-    needs: publish
+    needs: Publish
     environment:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
