@@ -23,7 +23,7 @@ jobs:
 
       - name: Install NPM dependencies
         run: npm install
-        working-directory: ./BetShrew
+        working-directory: ./TestApp
 
 
       - name: Set up .NET Core
